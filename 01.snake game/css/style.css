@@ -1,0 +1,24 @@
+*{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+canvas{
+    background-color: black; 
+     
+    
+}
+h2{
+    font-weight: bold;
+}
+#scoreText{
+    font-size: 100px;
+}
+#resetBtn{
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid;
+    border-radius: 15px;
+    cursor: pointer;
+
+}

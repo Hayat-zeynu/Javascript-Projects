@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="top-container">
+      <div class="clock">
+        <span class="hour"></span>:<span class="minute"></span>
+      </div>
+      <div class="status">
+        <img src="images/status.png" alt="Status">
+      </div>
+    </div>
+    <div class="value">0</div>
+    <div class="buttons-container">
+      <div onclick=" hitsAcKey()" class="button function ac">AC</div>
+      <div onclick="hitsOperatorKey('%')"class="data-operator='%' button function percent">%</div>
+      <div onclick="hitsOperatorKey('/')"class=" data-operator='/' button operator division">÷</div>
+      <div onclick="hitsNumberKey('7')"class="button number-7">7</div>
+      <div onclick="hitsNumberKey('8')"class="button number-8">8</div>
+      <div onclick="hitsNumberKey('9')"class="button number-9">9</div>
+      <div onclick="hitsOperatorKey('*')" class=" data-operator='*' button operator multiplication">×</div>
+      <div onclick="hitsNumberKey('4')"class="button number-4">4</div>
+      <div onclick="hitsNumberKey('5')"class="button number-5">5</div>
+      <div onclick="hitsNumberKey('6')"class="button number-6">6</div>
+      <div onclick="hitsOperatorKey('-')"class="button data-operator='-' operator subtraction">−</div>
+      <div onclick="hitsNumberKey('1')"class="button number-1">1</div>
+      <div onclick="hitsNumberKey('2')"class="button number-2">2</div>
+      <div onclick="hitsNumberKey('3')"class="button number-3">3</div>
+      <div onclick="hitsOperatorKey('+')"class="button data-operator='+' operator addition">+</div>
+      <div onclick="hitsNumberKey('0')"class="button number-0">0</div>
+      <div onclick="handleDecimal()"class="button decimal">.</div>
+      <div onclick="calculate()"class="button operator equal">=</div>
+    </div>
+    <div class="bottom"></div>
+  </div>
+<script src="js/script.js"></script>
+</body>
+</html>
